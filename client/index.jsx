@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
+import Home from "./component/Home.jsx"
 import "./style.css";
 
 class App extends React.Component {
@@ -8,6 +9,9 @@ class App extends React.Component {
   }
   render() {
     return(
+      
+      <div>
+      <Home/>
       <div className="header">
         <ul>
           <li><a>Home</a></li>
@@ -16,8 +20,9 @@ class App extends React.Component {
           <li><a>Your offers</a></li>
           <li><a>Login</a></li>
         </ul>
+        
       </div>
-       
+       </div>
     )
   }
 }

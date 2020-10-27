@@ -1,0 +1,68 @@
+.heading{
+    color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-family: Pacifico, Calibri;
+    font-size: 3em;
+}
+
+.title{
+    font-size: 30px ;
+}
+.subheading{
+    font-size: 20px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 500px;
+    margin-left: -200px;
+  }
+  .btn{
+      outline: none;
+    border-radius: 25px;
+    border:  #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .btn4{
+    color: #fff;
+  }
+
+  .btn4:hover{
+    color: #7c34db;
+  }
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background:  #7c34db;
+    z-index: -1;
+    transition: 0.8s;
+  }
+
+ .btn4::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .btn4::before{
+    height: 180%;
+  }
+ 
+.btn4:hover::before{
+    height: 0%;
+  }
+  
