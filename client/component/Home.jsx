@@ -15,9 +15,10 @@ class Home extends React.Component {
       </div>
       <div className="container">
       
-      <button className="btn btn4">More Information</button>
+      <button className="b">More Information</button>
     </div>
     </div>
+    
     )
    
     

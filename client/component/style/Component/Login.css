@@ -1,0 +1,17 @@
+.btn{
+  padding: 10px 20px;
+  font-family: Century Gothic;
+  font-size: large;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: blueviolet;
+  border-radius: 8px;
+  
+  
+}
+
+.btn :hover{
+  background: black;
+  color: rgb(101, 26, 171);
+}

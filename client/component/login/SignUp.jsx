@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import "./SignUp.css"
+import "../style/Component/SignUp.css"
 
 class SignUp extends React.Component {
     constructor(props) {
@@ -51,7 +51,8 @@ class SignUp extends React.Component {
 
     <h1 className="title">Register</h1>
     <p className="sub">Please fill in this form to create an account.</p><br></br><br></br>
-    <label htmlFor="username"><b>UserName</b></label>
+    <div className="inputFields">
+    <label  htmlFor="username"><b>UserName</b></label>
     <input  type="text" name="user" placeholder="Enter Your UserName" onChange={(e)=>{this.setState({userName:e.target.value})}}/><br></br>
     <label htmlFor="email"><b>Email</b></label>
     <input type="email" name="email" placeholder="Enter Your Email"  onChange={(e)=>{this.setState({email:e.target.value})}} /><br></br>
@@ -62,14 +63,15 @@ class SignUp extends React.Component {
     <label htmlFor="phone"><b>Phone</b></label>
     <input type="text" name="phone" placeholder="Enter Your phoneNumber"  onChange={(e)=>{this.setState({phone:e.target.value})}}/><br></br>
     <label htmlFor="gender"><b>Gender</b></label>
-    <select  onChange={(e)=>{this.setState({gender:e.target.value})}}>
+    
+    <select  onChange={(e)=>{this.setState({gender:e.target.value})}}><br></br>
   <option value="male">male</option>
   <option value="femal">female</option>
   </select><br></br>
     <label htmlFor="age"><b>Age</b></label>
     <input type="text" name="age" placeholder="Enter your Age" required value={this.state.age} onChange={(e)=>{this.setState({age:e.target.value})}} /><br></br> 
-  
-    <button type="submit"  name="SignIn" >SignUp </button>
+  </div>
+    <button className="button" type="submit"  name="SignIn" >SignUp </button>
 
     </form>
       </div>
@@ -78,4 +80,3 @@ class SignUp extends React.Component {
   }
   
   export default SignUp;
-

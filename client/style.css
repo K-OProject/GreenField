@@ -5,9 +5,10 @@
 
 
 body{
-    background-color: white;
+    /* background-image: url("img/korfi.png"); */
     background-size: cover;
     height: 100vh;
+    background-repeat: no-repeat;
 }
 
 
@@ -27,6 +28,9 @@ body{
 .header ul li{
     list-style: none;
     display: inline-block;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .header ul li a{
@@ -47,3 +51,13 @@ body{
 .header ul li a:hover{
     background-color: #211b4385;
 } 
+
+
+.logo {
+    width: 130px;
+    height: 100px;
+    float: left;
+    margin-left:52px;
+    margin-top: 7px;
+   
+  }

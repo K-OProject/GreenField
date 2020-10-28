@@ -1,0 +1,125 @@
+.t {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.i1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-color: black;
+
+  background: #f1f1f1;
+}
+
+.i2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-color: black;
+  background: #f1f1f1;
+}
+
+.i3 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-color: black;
+  background: #f1f1f1;
+}
+
+.i4 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-color: black;
+  background: #f1f1f1;
+}
+.bc {
+  position: absolute;
+  top: 70%;
+  left: 42%;
+  /* padding-bottom: 2px; */
+  transform: translate(-50, -50);
+ }
+ 
+ .bc {
+  background:rgb(34, 34, 218);
+  color: #ccc;
+  width: 270px;
+  height: 60px;
+  border: 1px solid rgb(7, 7, 74);
+  font-size: 18px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+ }
+ 
+ .bc:focus {
+  outline: none;
+ }
+ 
+ .bc:before {
+     content: '';
+     display: block;
+     position: absolute;
+     background: rgba(255,255,255,.5);
+     width: 60px;
+     height: 100%;
+     left: 0;
+     top: 0;
+     opacity: .5;
+     filter: blur(30px);
+     transform: translateX(-130px) skewX(-15deg);
+ }
+ 
+ .bc:after {
+     content: '';
+     display: block;
+     position: absolute;
+     background: rgba(255,255,255,.2);
+     width: 30px;
+     height: 100%;
+     left: 30px;
+     top: 0;
+     opacity: 0;
+     filter: blur(30px);
+     transform: translateX(-100px) scaleX(-15deg);
+ }
+ 
+ .bc:hover {
+    background: rgb(7, 7, 74);
+    cursor: pointer;
+ }
+ 
+.bc:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+ }
+ 
+ .bc:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: .7s;
+ }

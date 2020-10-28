@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
 
 let User = mongoose.model("User", userSchema);
 
-module.exports.create = (obj) => {
+module.exports.createUser = (obj) => {
   return new Promise((resolve, reject) => {
     let email = obj.email;
     User.findOne({ email: email }, (err, data) => {
