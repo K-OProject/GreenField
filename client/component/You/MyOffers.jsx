@@ -67,9 +67,6 @@ class MyOffers extends React.Component {
     return (
       <div>
 <button className="k"  onClick={this.props.goBack}> Go Back</button> <div>
-          {this.state.dataDone.map((data, index) => (
-            <Done data={data} key={index} />
-          ))}
         </div>
         <div>
           {this.state.dataPending.map((data, index) => (
