@@ -65,7 +65,7 @@ class MyOffers extends React.Component {
     console.log("data", this.state.dataDone);
     this.queryPending();
     return (
-      <div>
+      <div className='h'>
         <button className="k" onClick={this.props.goBack}>
           {" "}
           Go Back
@@ -85,7 +85,9 @@ class MyOffers extends React.Component {
           </>
         </div>
         <div>
-          {this.state.dataDone !== [] ? (
+
+          {this.state.dataDone.length !== [] ? (
+
             <Done data={this.state.dataDone} />
           ) : (
             <div></div>

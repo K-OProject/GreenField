@@ -17,7 +17,7 @@
     border-radius: 4px;
     transition: 0.6s;
     overflow: hidden;
-    margin-top: -400px;
+    margin-top: -340px;
     margin-left: -630px;
   }
   
@@ -144,4 +144,6 @@
     opacity: 1;
     transition: 0.7s;
   }
-  
+  /* .h{
+    margin-top: -140px;
+} */
