@@ -33,3 +33,9 @@
     font-family: Times New Roman;
     font-weight: bold;
   }
+  .p{margin-left: 500px;
+    background-color: darkblue;
+    color: white;
+    width: 120px;}
+  .s{margin-left: 40px;
+    width: 10%;}
