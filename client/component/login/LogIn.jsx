@@ -1,7 +1,7 @@
 import React from "react";
 import SignIn from "./SignIn.jsx";
 import SignUP from "./SignUp.jsx";
-import "../style/Component/LogIn.css";
+import "../style/Component/Login.css";
 
 class LogIn extends React.Component {
   constructor(props) {
