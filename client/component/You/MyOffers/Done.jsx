@@ -60,14 +60,14 @@ class Done extends React.Component {
             <span className="feed3-list-item-poster">
               <strong>Task applicant : </strong> {this.props.data.employeeEmail}
             </span>
-            <input
+            <input className='s'
               type="number"
               max="10"
               min="0"
               style={{ width: "20%" }}
               onChange={this.changeRating}
             />
-            <button onClick={this.Submit}>submit rating</button>
+            <button className='p' onClick={this.Submit}>submit rating</button>
           </li>
         </ul>
       </div>

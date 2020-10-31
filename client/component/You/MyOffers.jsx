@@ -3,7 +3,7 @@ import Done from "./MyOffers/Done.jsx";
 import Pending from "./MyOffers/Pending.jsx";
 import JobsInProg from "./MyOffers/JobInProg.jsx";
 import axios from "axios";
-import "../style/Component/MyOffers.css"
+import "../style/Component/MyOffers.css";
 
 class MyOffers extends React.Component {
   constructor(props) {
@@ -65,12 +65,11 @@ class MyOffers extends React.Component {
 
     this.queryPending();
     return (
-      <div>
-<button className="k"  onClick={this.props.goBack}> Go Back</button> <div>
-          {this.state.dataDone.map((data, index) => (
-            <Done data={data} key={index} />
-          ))}
-        </div>
+      <div className='h'>
+        <button className="k" onClick={this.props.goBack}>
+          {" "}
+          Go Back
+        </button>{" "}
         <div>
           {this.state.dataPending.map((data, index) => (
             <Pending data={data} key={index} />
@@ -78,12 +77,15 @@ class MyOffers extends React.Component {
           {this.state.dataInProgress.map((data, index) => (
             <JobsInProg data={data} key={index} />
           ))}
-          <div>
-            <button className="j" onClick={this.props.goBack}> Go Back</button>
-          </div>
+          <>
+            <button className="j" onClick={this.props.goBack}>
+              {" "}
+              Go Back
+            </button>
+          </>
         </div>
         <div>
-          {this.state.dataDone.length > 0 ? (
+          {this.state.dataDone.length !== [] ? (
             <Done data={this.state.dataDone} />
           ) : (
             <div></div>

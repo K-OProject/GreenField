@@ -54,7 +54,7 @@ class JobsInProg extends React.Component {
             <br></br>
             <span className="feed4-list-item-poster">
               <strong>Task applicant : </strong> {this.props.data.employeeEmail}
-              <button onClick={this.clickHandler}>Done</button>
+              <button className='gm' onClick={this.clickHandler}>Done</button>
             </span>
           </li>
         </ul>
