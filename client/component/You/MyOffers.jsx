@@ -62,7 +62,7 @@ class MyOffers extends React.Component {
   render() {
     this.queryDone();
     this.getJobiProg();
-
+    console.log("data", this.state.dataDone);
     this.queryPending();
     return (
       <div>
@@ -85,7 +85,7 @@ class MyOffers extends React.Component {
           </>
         </div>
         <div>
-          {this.state.dataDone.length > 0 ? (
+          {this.state.dataDone !== [] ? (
             <Done data={this.state.dataDone} />
           ) : (
             <div></div>
