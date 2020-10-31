@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDom from "react-dom";
-import Home from "./component/Home.jsx";
-import PostAdd from "./component/PostAdd/PostAdd.jsx";
-import Adds from "./component/adds/Adds.jsx";
-import LogIn from "./component/login/Login.jsx";
+import Home from "../client/component/Home.jsx";
+import PostAdd from "../client/component/PostAdd/PostAdd.jsx";
+import Adds from "../client/component/adds/Adds.jsx";
+import LogIn from "../client/component/login/Login.jsx";
 import "./style.css";
-import You from "./component/You/You.jsx";
-import items from "./links";
+import You from "../client/component/You/You.jsx";
+import items from "../client/links.js";
 
 class App extends React.Component {
   constructor(props) {
